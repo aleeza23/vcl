@@ -41,7 +41,7 @@ const Login = () => {
                                 <div className="-mt-1 font-bod bg-white px-5 absolute">Or</div>
                             </div>
 
-                              <button className='bg-[#18181B] w-full text-white font-readex text-center font-light rounded-lg py-2'>Signup</button>
+                              <button className='bg-[#18181B] w-full text-white font-readex text-center font-light rounded-lg py-2 mt-8'>Signup</button>
                         </form>
                     </div>
                 </div>
