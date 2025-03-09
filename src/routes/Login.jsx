@@ -40,6 +40,8 @@ const Login = () => {
                             <div className="flex items-center justify-center w-full border-t-[1px] border-t-slate-300 mt-8 relative">
                                 <div className="-mt-1 font-bod bg-white px-5 absolute">Or</div>
                             </div>
+
+                              <button className='bg-[#18181B] w-full text-white font-readex text-center font-light rounded-lg py-2'>Signup</button>
                         </form>
                     </div>
                 </div>
