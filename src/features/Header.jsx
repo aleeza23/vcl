@@ -41,7 +41,7 @@ export const Header = () => {
 
                 {/* Mobile Menu */}
                 <div
-                    className={`z-10 fixed left-0 top-0 h-full w-[250px]  lg:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? ' opacity-100' : 'opacity-0'}`}
+                    className={`z-50 fixed left-0 top-0 h-full w-[250px]  lg:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? ' opacity-100' : 'opacity-0'}`}
                     style={{ transition: 'all 0.3s ease-in-out' }}
                 >
                     <div className="flex flex-col gap-3  border-r border-white/20 bg-black bg-gradient-to-t from-neutral-900 h-full p-8 w-full">
