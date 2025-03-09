@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  --font-readex: "Readex Pro", "serif";
+}
+
+@layer components {
+  .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    /* Ensures smooth oval shape */
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    z-index: 2;
+  }
+
+  .btn::before,
+  .btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: inherit;
+  }
+
+  .btn::before {
+    width: 150%;
+    height: 150%;
+    background: conic-gradient(#7777772a 0deg,
+        #7777772a 60deg,
+        #21F6EE 120deg,
+        #7777772a -120deg,
+        #7777772a 180deg,
+        #7777772a 240deg,
+        #7777772a 300deg,
+        #7777772a 360deg);
+    animation: rotate 4s infinite linear;
+  }
+
+  .btn::after {
+    width: 99%;
+    height: 98%;
+    background-color: black;
+    border-radius: 50px;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+}
+
+
+
+body {
+  background-color: #000000;
+  font-family: var(--font-readex);
+}
